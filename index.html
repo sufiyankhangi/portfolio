@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfilo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/e94511be27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <div id="header" >
+        <div class="container">
+            <nav>
+                <h1 class = "nam">S<span>ufi</span>yan</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><p>Hi, I'm</p>
+                 <span>Sufiyan,</span> &</h1><h2><p>I'm a <span class="typing"></span> </h2>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id= "about">
+        <div class="container">
+             <div class= "row">
+                 <div class= "about-col-1" data-aos="fade-right" data-aos-duration="1100" data-aos-offset="150" data-aos-mirror="true">
+                      <img src= "i2.jpg">
+                 </div>
+                 <div class="about-col-2">
+                      <h1 class="sub-title">About Me</h1>
+                      <p class="sel">Sufiyan is my name, and I used to live in Delhi.
+                         and I am a student of final-year information 
+                        technology in the B.Tech programme at NSUT's west campus.
+                         I'm eager to work with new-era technology. </p>
+                         <div class="tab-titles">
+                            <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class ="tab-links" onclick="opentab('education')">Education</p>
+                            <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>JAVA</span><br>Problem solving with Data Stucture and Algorithms</li>
+                                <li><span>WEB DEVELOPMENT </span><br>HTML, CSS, JavaScript, Node.js, Wordpress</li>
+                                <li><span>SQL</span><br>Database Mangement System</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.Tech in I.T. <sup>(2019 - 2023)</sup></span><br>NSUT West Campus (Formerly CBPGEC) <sup>CGPA 8.396 till now</sup>  </li>
+                                <li><span>Class XII (CBSE) <sup>2018</sup> </span><br>Govt. Sarvodaya Vidyalaya, Sector-3 Rohini, New Delhi <sup>  60.4%</sup> </li>
+                                <li><span>Class X (CBSE) <sup>2016</sup></span><br>Indraprastha Convent Sr. Sec. School, New Delhi <sup>  CGPA 8.6</sup> </li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Development</span><br>Work with Indraprastha kendra as a Wordpress Developer</li>
+                                <li><span>Node.js</span><br>Automation and web scrapping self projects </li>
+                                <li><span>Wordpress</span><br>Depoly a site named Shopping villa, fully fuctional e-commerce site.</li>
+                            </ul>
+                         </div>
+                 </div>
+             </div>
+        </div>
+   </div>
+
+   <!-- ---services-- -->
+   <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY Services</h1>
+            <div class="services-list" >
+                <div data-aos="fade-left" data-aos-mirror="true">
+                    <div>
+                    <i class="fa-solid fa-code" ></i>
+                    <h2>Coding</h2>
+                    <p> I have a good coding attitude. When I use a language like Java, I use good data structures and algorithms in my commands. I also have experience with web development, having used html, CSS, javascript, WordPress, and other technologies. </p>
+                    <a href="#">learn more</a>
+                </div></div>
+                <div data-aos="zoom-in" data-aos-mirror="true">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p> My three rules for doing web work stem from my web development experience. these three factors boost my creativity. <br> 1. appearance,<br> 2. design, and <br> 3. performance.</p>
+                    <a href="#">learn more</a>
+                </div></div>
+                <div data-aos="fade-right" data-aos-mirror="true">
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p> I am able to make a simple, functional app in which I can make chatbots, user authentications, and many more foundational tasks.</p>
+                    <a href="#">learn more</a>
+                </div></div>
+            </div>
+        </div>
+   </div>
+   <!-- ------portfolio--- -->
+   <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work" data-aos="fade-left" data-aos-mirror="true">
+                    <img src="1.jpg"  alt="">
+                    <div class="layer">
+                        <h3>Shopping villa</h3>
+                        <p>This is the fully functional e-com. site <br><br>Take a Look</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in" data-aos-mirror="true">
+                    <img src="2.jpg"  alt="">
+                    <div class="layer">
+                        <h3>Web Scrapping</h3>
+                        <p>This project involves scraping a website and extracting data into a preferred document type.  <br><br>Take a Look </p>
+                        <a href="https://github.com/sufiyankhangi/Web-Scrapping-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-right" data-aos-mirror="true">
+                    <img src="3.jpg"  alt="">
+                    <div class="layer">
+                        <h3>Automation</h3>
+                        <p>This project is based on a solution to such types of work where we have to do things in a recursive manner.<br><br> I,m attaching a video also. <br><br>Take a Look </p>
+                        <a href="https://github.com/sufiyankhangi/Automation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" data-aos="zoom-in" data-aos-offset="150">See more</a>
+        </div>
+   </div>
+   <!-- ---contact--- -->
+   <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="zoom-in" data-aos-offset="150" data-aos-delay="500">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:sufiyankhangi@gmail.com" style="text-decoration:inherit; color:inherit;">sufiyankhangi@gmail.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 8383843822</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sufiyankhangi/"><i class="fa-brands fa-linkedin "></i></a>
+                        <a href="https://github.com/sufiyankhangi"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/Sufiyan11665718"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/sufiyankhangi/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/918383843822"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="sufiyan.pdf" download class="btn btn2" data-aos="zoom-out" data-aos-offset="50" data-aos-delay="1000">Download CV</a>
+                </div>
+                <div class="contact-right" data-aos="fade-left" data-aos-offset="350" >
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="vrbl"> Copyright © Made by Sufiyan.</p>
+        </div>
+   </div>
+
+   
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+   <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyu4KeBUWZKKBXgLGdYH2IRTbWA6zDpPYV0gDHMWK2XJPpNagZIimSynCusWN37UT3d/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        var mw =600;
+        var cw = window.innerWidth;
+        if(cw<mw){
+            AOS.init({
+                // duration:200,
+                // 'data-aos':'zoom-in'
+                init : 'zoom-in'
+      })
+        }else{
+           AOS.init({
+        offset:300,
+        duration :1000,
+      }
+        
+      ); 
+        }
+      
+    </script>
+    <script>
+        var typed = new Typed(".typing",{
+            strings :["Web Developer","Java Developer"],
+            typeSpeed:100,
+            backSpeed:60,
+            loop:true
+        })
+    </script>
+    
+</body>
+</html>
