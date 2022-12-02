@@ -92,11 +92,11 @@ body{
 .nam{
     margin-top: 3px;
     font-size: 50px;
-    color: #ff004f;
+    /* color: #ff004f; */
 }
-.nam span{
+/* .nam span{
     color: #fff;
-}
+} */
 
 .container{
     padding: 10px 10%;
@@ -543,11 +543,11 @@ nav .fas{
 
 /* ----footer color changer */
 :root {
-    --color-1: #f4f;
+    --color-1: #ffffff;
     --color-2: #ff004f;
     --color-3: #ffffff;
     --color-4: #ffffff;
-    --color-5: rgb(64, 22, 22);
+    --color-5: #ffffff;
     --angle: 0deg;
   }
   
@@ -578,4 +578,32 @@ nav .fas{
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
+  }
+
+
+  :root {
+    --color-9: #ff004f;
+    --color-8: #ffffff;
+    --color-3: #ffffff;
+    --color-4: #ffffff;
+    --color-5: #ffffff;
+    --angle: 0deg;
+  }
+  
+  .logom {
+    background: linear-gradient(
+      var(--angle),
+      var(--color-9) 20%,
+      var(--color-8) 60%,
+      var(--color-8) 39vw,
+      var(--color-3) 40vw,
+      var(--color-3) 59vw,
+      var(--color-4) 70%,
+      var(--color-4) 70%,
+      var(--color-5) 80%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    animation: 6s rotate linear infinite;
   }
