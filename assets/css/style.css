@@ -583,8 +583,8 @@ nav .fas{
 
   :root {
     --color-9: #ff004f;
-    --color-8: #ffffff;
-    --color-3: #ffffff;
+    --color-8: #ff00513b;
+    --color-7: #ff00513b;
     --color-4: #ffffff;
     --color-5: #ffffff;
     --angle: 0deg;
@@ -596,8 +596,8 @@ nav .fas{
       var(--color-9) 20%,
       var(--color-8) 60%,
       var(--color-8) 39vw,
-      var(--color-3) 40vw,
-      var(--color-3) 59vw,
+      var(--color-7) 40vw,
+      var(--color-7) 59vw,
       var(--color-4) 70%,
       var(--color-4) 70%,
       var(--color-5) 80%
@@ -605,5 +605,5 @@ nav .fas{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; 
-    animation: 6s rotate linear infinite;
+    animation: 3s rotate  infinite;
   }
