@@ -140,7 +140,7 @@
                         <a href="https://shoppingvilla.sufiyan.me/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work" data-aos="fade-right" data-aos-mirror="true">
+                <div class="work" data-aos="zoom-in" data-aos-mirror="true">
                     <img src="./assets/img/r.webp"  alt="">
                     <div class="layer">
                         <h3>Omio - TESLA STORE </h3>
@@ -148,7 +148,7 @@
                         <a href="https://omio.sufiyan.me/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work" data-aos="zoom-in" data-aos-mirror="true">
+                <div class="work" data-aos="fade-right" data-aos-mirror="true">
                     <img src="./assets/img/2.webp"  alt="">
                     <div class="layer">
                         <h3>Web Scrapping</h3>
@@ -156,7 +156,7 @@
                         <a href="https://github.com/sufiyankhangi/Web-Scrapping-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work" data-aos="fade-right" data-aos-mirror="true">
+                <div class="work" data-aos="fade-left" data-aos-mirror="true">
                     <img src="./assets/img/3.webp"  alt="">
                     <div class="layer">
                         <h3>Automation</h3>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn" data-aos="zoom-in" data-aos-offset="150">See more</a>
+            <a href="" class="btn" data-aos="zoom-in" data-aos-offset="150">See more</a>
         </div>
    </div>
    <!-- ---contact--- -->
@@ -271,6 +271,20 @@
             loop:true
         })
     </script>
-    
+    <!-- <script>
+        let bttn = document.querySelector('.loadmore');
+        let current = 3;
+        bttn.onclick = () =>{
+            let boxes = [...document.querySelectorAll('.work-list .work')];
+            for(var i = current;i<current+3;i++){
+                boxes[i].style.display = 'inline-block';
+            }
+            current += 3;
+            if(current >= boxes.length){
+                bttn.style.display ='none';
+            }
+        }
+    </script>
+     -->
 </body>
 </html>
